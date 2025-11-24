@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/ToyStore/cmake-build-debug"
+			"value" : "c:/Users/vanno/Desktop/ToyStore/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/vanno/Desktop/ToyStore/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/ToyStore"
+			"value" : "C:/Users/vanno/Desktop/ToyStore"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/ToyStore"
+			"value" : "C:/Program Files (x86)/ToyStoreRoleUA_FULL"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1270,18 +1270,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "ToyStoreRoleUA_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore/cmake-build-debug"
-		},
-		{
 			"name" : "ToyStoreRoleUA_FULL_BINARY_DIR",
 			"properties" : 
 			[
@@ -1291,7 +1279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore/cmake-build-debug"
+			"value" : "C:/Users/vanno/Desktop/ToyStore/cmake-build-debug"
 		},
 		{
 			"name" : "ToyStoreRoleUA_FULL_IS_TOP_LEVEL",
@@ -1315,103 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore"
-		},
-		{
-			"name" : "ToyStoreRoleUA_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ToyStoreRoleUA_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore"
-		},
-		{
-			"name" : "ToyStoreUA_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore/cmake-build-debug"
-		},
-		{
-			"name" : "ToyStoreUA_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ToyStoreUA_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore"
-		},
-		{
-			"name" : "ToyStore_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore/cmake-build-debug"
-		},
-		{
-			"name" : "ToyStore_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ToyStore_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore"
+			"value" : "C:/Users/vanno/Desktop/ToyStore"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

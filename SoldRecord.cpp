@@ -17,7 +17,12 @@ SoldRecord::SoldRecord(std::string article, std::string name,
 }
 
 std::string SoldRecord::ToCSV() const {
-    // article;name;price;seller;time
-    return article + ";" + name + ";" + std::to_string(price) + ";" +
-           seller + ";" + time;
+    return "\"" + article + "\";\"" +
+           name + "\";\"" +
+           std::to_string(price) + "\";\"" +
+           seller + "\";\"" +
+           time + "\"";
 }
+
+
+

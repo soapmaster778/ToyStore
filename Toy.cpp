@@ -29,8 +29,9 @@ void Toy::SetPrice(double newPrice) { price = newPrice; }
 
 // Формат: тип;артикул;назва;вік;ціна
 std::string Toy::ToString() const {
-    return "Toy;" + article + ";" + name + ";" +
-           std::to_string(ageCategory) + ";" + std::to_string(price);
+    return "Toy;\"" + article + "\";\"" + name + "\";\"" +
+           std::to_string(ageCategory) + "\";\"" +
+           std::to_string(price) + "\"";
 }
 
 bool Toy::Matches(const std::string &query) const {

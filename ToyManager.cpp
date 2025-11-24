@@ -16,6 +16,14 @@ ToyManager::~ToyManager() {
         delete t;
 }
 
+// Clean function
+static std::string Clean(const std::string& s) {
+    if (s.size() >= 2 && s.front() == '"' && s.back() == '"')
+        return s.substr(1, s.size() - 2);
+    return s;
+}
+
+
 // Завантаження іграшок з файлу
 void ToyManager::Load() {
     try {
@@ -47,7 +55,12 @@ void ToyManager::Load() {
                     std::cout << "[WARN] Пошкоджений запис Toy, пропущено.\n";
                     continue;
                 }
-                toys.push_back(new Toy(a, n, std::stoi(age), std::stod(price)));
+                a = Clean(a);
+n = Clean(n);
+age = Clean(age);
+price = Clean(price);
+
+toys.push_back(new Toy(a, n, std::stoi(age), std::stod(price)));
             } else if (type == "Luxury") {
                 std::string a, n, age, price, man, rating, seg;
                 if (!(std::getline(ss, a, ';') &&
@@ -60,8 +73,15 @@ void ToyManager::Load() {
                     std::cout << "[WARN] Пошкоджений запис LuxuryToy, пропущено.\n";
                     continue;
                 }
-                toys.push_back(new LuxuryToy(a, n, std::stoi(age), std::stod(price),
-                                             man, std::stoi(rating), seg));
+                a = Clean(a);
+n = Clean(n);
+age = Clean(age);
+price = Clean(price);
+man = Clean(man);
+rating = Clean(rating);
+seg = Clean(seg);
+
+toys.push_back(new LuxuryToy(a, n, std::stoi(age), std::stod(price), man, std::stoi(rating), seg));
             }
         }
     } catch (std::exception& e) {
@@ -72,16 +92,28 @@ void ToyManager::Load() {
 // Збереження колекції іграшок у файл
 void ToyManager::Save() {
     try {
-        std::ofstream f(toysFile);
-        if (!f.is_open()) {
-            throw std::runtime_error("Не вдалося відкрити toys.csv для запису");
+        bool exists = std::ifstream(toysFile, std::ios::binary).good();
+
+        std::ofstream f;
+        if (!exists) {
+            f.open(toysFile, std::ios::binary);
+            const unsigned char bom[3] = {0xEF, 0xBB, 0xBF};
+            f.write(reinterpret_cast<const char*>(bom), 3);
+        } else {
+            f.open(toysFile, std::ios::binary | std::ios::trunc);
         }
+
+        if (!f.is_open())
+            throw std::runtime_error("Не вдалося відкрити toys.csv для запису");
+
         for (auto t : toys)
             f << t->ToString() << "\n";
-    } catch (std::exception& e) {
+    }
+    catch (std::exception &e) {
         std::cout << "[ERROR] " << e.what() << "\n";
     }
 }
+
 
 // Виведення всіх іграшок
 void ToyManager::ShowAll() {
@@ -347,3 +379,5 @@ void ToyManager::Help() {
     std::cout << "При некоректному введенні програма попросить повторити спробу.\n";
     std::cout << "===================================================\n\n";
 }
+
+

@@ -1,0 +1,2 @@
+admin:admin123:admin
+shmara:23:admin

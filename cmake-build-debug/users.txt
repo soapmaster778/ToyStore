@@ -1,4 +1,1 @@
-admin:admin123
-lola:policeblue228
-fofo:shlashla
-lona:1234
+salo:salo:user

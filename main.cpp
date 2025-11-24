@@ -15,9 +15,9 @@ int main() {
     system("chcp 65001 > nul");
 #endif
 
-
     UserManager userManager;
     std::string loggedUser;
+    std::string loggedRole; // "admin" або "user"
 
     int startChoice = -1;
 
@@ -41,7 +41,7 @@ int main() {
             tmp.Help();
         } else if (startChoice == 1) {
             // Авторизація до успіху
-            while (!userManager.Login(loggedUser)) {
+            while (!userManager.Login(loggedUser, loggedRole)) {
                 std::cout << "[WARN] Невірний логін або пароль. Спробуйте ще раз.\n";
             }
             break; // переходимо до основного меню
@@ -54,9 +54,9 @@ int main() {
     int choice = -1;
     while (choice != 0) {
         std::cout << "\n=== МЕНЮ МАГАЗИНУ ІГРАШОК (користувач: "
-                  << loggedUser << ") ===\n";
+                  << loggedUser << ", роль: " << loggedRole << ") ===\n";
 
-        if (loggedUser == "admin") {
+        if (loggedRole == "admin") {
             std::cout << " 1. Показати всі іграшки\n";
             std::cout << " 2. Додати іграшку\n";
             std::cout << " 3. Додати преміальну іграшку (Luxury)\n";
@@ -69,9 +69,12 @@ int main() {
             std::cout << "11. Показати користувачів\n";
             std::cout << "12. Додати користувача\n";
             std::cout << "13. Видалити користувача\n";
+            std::cout << "15. Показати адміністраторів\n";
+            std::cout << "16. Додати адміністратора\n";
+            std::cout << "17. Видалити адміністратора\n";
             std::cout << "14. Допомога\n";
             std::cout << " 0. Вийти\n";
-        } else {
+        } else { // role == "user"
             std::cout << " 1. Показати всі іграшки\n";
             std::cout << " 6. Пошук іграшки\n";
             std::cout << " 7. Купити іграшку\n";
@@ -81,7 +84,7 @@ int main() {
             std::cout << " 0. Вийти\n";
         }
 
-        choice = InputValidator::ReadInt("> ", 0, 14);
+        choice = InputValidator::ReadInt("> ", 0, 17);
 
         switch (choice) {
             case 1:
@@ -89,28 +92,28 @@ int main() {
                 break;
 
             case 2: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     toyManager.AddToy();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 3: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     toyManager.AddLuxuryToy();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 4: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     toyManager.EditToy();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 5: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     toyManager.RemoveToy();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
@@ -121,14 +124,14 @@ int main() {
                 break;
 
             case 7: // купівля/продаж — тільки звичайний користувач
-                if (loggedUser != "admin")
+                if (loggedRole == "user")
                     toyManager.SellToy(); // всередині можна виводити "Купівля іграшки"
                 else
                     std::cout << "[WARN] Адміністратор не може купувати іграшки.\n";
                 break;
 
             case 8: // статистика продажів — тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     toyManager.CountSold();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
@@ -143,21 +146,21 @@ int main() {
                 break;
 
             case 11: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     userManager.ShowUsers();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 12: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     userManager.AddUser();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 13: // тільки адмін
-                if (loggedUser == "admin")
+                if (loggedRole == "admin")
                     userManager.RemoveUser();
                 else
                     std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
@@ -165,6 +168,27 @@ int main() {
 
             case 14:
                 toyManager.Help();
+                break;
+
+            case 15: // показати адміністраторів
+                if (loggedRole == "admin")
+                    userManager.ShowAdmins();
+                else
+                    std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
+                break;
+
+            case 16: // додати адміністратора
+                if (loggedRole == "admin")
+                    userManager.AddAdmin();
+                else
+                    std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
+                break;
+
+            case 17: // видалити адміністратора
+                if (loggedRole == "admin")
+                    userManager.RemoveAdmin();
+                else
+                    std::cout << "[WARN] Цей пункт доступний лише адміністратору.\n";
                 break;
 
             case 0:

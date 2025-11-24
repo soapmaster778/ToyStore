@@ -29,11 +29,14 @@ LuxuryToy::~LuxuryToy() {
 
 // Формат: Luxury;артикул;назва;вік;ціна;виробник;рейтинг;сегмент
 std::string LuxuryToy::ToString() const {
-    return "Luxury;" + article + ";" + name + ";" +
-           std::to_string(ageCategory) + ";" +
-           std::to_string(price) + ";" +
-           manufacturer + ";" + std::to_string(rating) + ";" + segment;
+    return "Luxury;\"" + article + "\";\"" + name + "\";\"" +
+           std::to_string(ageCategory) + "\";\"" +
+           std::to_string(price) + "\";\"" +
+           manufacturer + "\";\"" +
+           std::to_string(rating) + "\";\"" +
+           segment + "\"";
 }
+
 
 bool LuxuryToy::Matches(const std::string &query) const {
     return article == query || name == query || manufacturer == query;
