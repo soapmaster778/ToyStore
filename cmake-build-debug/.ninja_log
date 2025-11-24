@@ -1,0 +1,21 @@
+# ninja log v6
+2703	3137	7856886073307565	ToyStoreRoleUA_FULL.exe	2979ad885b5607e3
+3	330	7856957720573324	build.ninja	a2b842511f5295c0
+16	649	7856908649957071	CMakeFiles/untitled.dir/LuxuryToy.cpp.obj	f8f005be55fecc99
+1698	2196	7855289811934525	ToyStore.exe	ea524336505ece51
+1554	1766	7855495319178944	ToyStoreRoleUA.exe	c471f173fb732478
+2852	3071	7855381789727142	ToyStoreUA.exe	b7fd0d58c9e6cb40
+21	641	7856908650007090	CMakeFiles/untitled.dir/SoldRecord.cpp.obj	ce509faa5f431778
+9	654	7856908649887039	CMakeFiles/untitled.dir/Toy.cpp.obj	eda093aac1cc4574
+654	1255	7856908656338500	CMakeFiles/untitled.dir/ISearchable.cpp.obj	21e7110e7fcb47a2
+643	1304	7856908656228472	CMakeFiles/untitled.dir/ToyManager.cpp.obj	35f3350351e813a2
+649	1390	7856908656288489	CMakeFiles/untitled.dir/UserManager.cpp.obj	5675b9dd49989564
+25	1120	7856957776259322	CMakeFiles/ToyStoreRoleUA_FULL.dir/UserManager.cpp.obj	17c44a457a6e6ec3
+69	1175	7856957776789445	CMakeFiles/ToyStoreRoleUA_FULL.dir/Toy.cpp.obj	17d666f0e2d8cbcf
+12	3089	7856957776129309	CMakeFiles/ToyStoreRoleUA_FULL.dir/main.cpp.obj	34e57d4663a71f44
+32	595	7856961845431258	CMakeFiles/ToyStoreRoleUA_FULL.dir/AbstractItem.cpp.obj	f1bcc28242a9ded4
+28	851	7856961845380573	CMakeFiles/ToyStoreRoleUA_FULL.dir/SoldRecord.cpp.obj	141bf09a2d689a5
+20	857	7856961845309199	CMakeFiles/ToyStoreRoleUA_FULL.dir/LuxuryToy.cpp.obj	b43e58ba593e6026
+12	1262	7856961845228505	CMakeFiles/ToyStoreRoleUA_FULL.dir/ToyManager.cpp.obj	8c725afa7be2bfa7
+6	576	7856964281662478	CMakeFiles/ToyStoreRoleUA_FULL.dir/InputValidator.cpp.obj	a1feb4f9ba7a5ca4
+577	903	7856964287374806	ToyStoreRoleUA_FULL.exe	2979ad885b5607e3
