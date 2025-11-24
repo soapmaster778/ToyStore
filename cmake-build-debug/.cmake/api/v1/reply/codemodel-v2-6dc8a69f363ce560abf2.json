@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f/cmake-build-debug",
-		"source" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f"
+		"build" : "C:/Users/vanno/Desktop/ToyStore/cmake-build-debug",
+		"source" : "C:/Users/vanno/Desktop/ToyStore"
 	},
 	"version" : 
 	{

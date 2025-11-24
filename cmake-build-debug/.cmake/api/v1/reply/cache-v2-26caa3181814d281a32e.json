@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f/cmake-build-debug"
+			"value" : "c:/ToyStore/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/ToyStore/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f"
+			"value" : "C:/ToyStore"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/ToyStoreRoleUA_FULL"
+			"value" : "C:/Program Files (x86)/ToyStore"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1270,6 +1270,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "ToyStoreRoleUA_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore/cmake-build-debug"
+		},
+		{
 			"name" : "ToyStoreRoleUA_FULL_BINARY_DIR",
 			"properties" : 
 			[
@@ -1279,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f/cmake-build-debug"
+			"value" : "C:/ToyStore/cmake-build-debug"
 		},
 		{
 			"name" : "ToyStoreRoleUA_FULL_IS_TOP_LEVEL",
@@ -1303,7 +1315,103 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f"
+			"value" : "C:/ToyStore"
+		},
+		{
+			"name" : "ToyStoreRoleUA_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "ToyStoreRoleUA_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore"
+		},
+		{
+			"name" : "ToyStoreUA_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore/cmake-build-debug"
+		},
+		{
+			"name" : "ToyStoreUA_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "ToyStoreUA_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore"
+		},
+		{
+			"name" : "ToyStore_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore/cmake-build-debug"
+		},
+		{
+			"name" : "ToyStore_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "ToyStore_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/ToyStore"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1316,42 +1424,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
-		},
-		{
-			"name" : "untitled_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f/cmake-build-debug"
-		},
-		{
-			"name" : "untitled_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "untitled_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/ToyStore \u2013 \u043a\u043e\u043f\u0456\u044f"
 		}
 	],
 	"kind" : "cache",

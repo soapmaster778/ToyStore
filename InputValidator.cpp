@@ -35,14 +35,12 @@ double InputValidator::ReadDouble(const std::string& prompt, double min, double 
 }
 
 std::string InputValidator::ReadString(const std::string& prompt) {
-    std::cout << prompt;
     std::string s;
-    std::getline(std::cin >> std::ws, s);
+    std::cout << prompt;
+    std::cin >> s;
     while (s.empty()) {
-        std::cout << "[WARN] Рядок не може бути порожнім.
-" << prompt;
-        std::getline(std::cin >> std::ws, s);
+        std::cout << "[WARN] Рядок не може бути порожнім.\n" << prompt;
+        std::cin >> s;
     }
     return s;
-}
 }

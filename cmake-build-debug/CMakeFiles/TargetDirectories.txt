@@ -1,3 +1,3 @@
-C:/ToyStore – копія/cmake-build-debug/CMakeFiles/ToyStoreRoleUA_FULL.dir
-C:/ToyStore – копія/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/ToyStore – копія/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/ToyStore/cmake-build-debug/CMakeFiles/ToyStoreRoleUA_FULL.dir
+C:/ToyStore/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/ToyStore/cmake-build-debug/CMakeFiles/rebuild_cache.dir
